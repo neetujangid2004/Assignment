@@ -37,12 +37,12 @@ zoomOut.onclick = function() {
 }
 
 // Previous and Next image functionality (assuming multiple images)
-let images = ['workout1.png', 'workout2.png', 'example3.jpg']; // Array of image URLs
+let images = ['workout1.png', 'workout2.png', 'workout3.png']; 
 let currentIndex = 0;
 
 function updateImage() {
     modalImage.src = images[currentIndex];
-    downloadImage.href = modalImage.src; // Update download link with new image
+    downloadImage.href = modalImage.src; 
 }
 
 prevImage.onclick = function() {
@@ -70,7 +70,7 @@ const downloadImageS = document.getElementById('downloadImageS');
 // Open the modal when the image is clicked
 mainImageS.onclick = function() {
     modal.style.display = 'flex';
-    downloadImageS.href = modalImageS.src; // Set download link
+    downloadImageS.href = modalImageS.src; 
 }
 
 // Close the modal when the close button is clicked
@@ -95,7 +95,7 @@ zoomOutS.onclick = function() {
 }
 
 // Previous and Next image functionality (assuming multiple images)
-let imagesS = ['workout1.png', 'workout2.png', 'example3.jpg']; 
+let imagesS = ['workout1.png', 'workout2.png', 'workout3.png']; 
 let currentIndexS = 0;
 
 function updateImageS() {
@@ -153,7 +153,7 @@ zoomOutT.onclick = function() {
 }
 
 // Previous and Next image functionality (assuming multiple images)
-let imagesT = ['workout1.png', 'workout2.png', 'example3.jpg']; 
+let imagesT = ['workout1.png', 'workout2.png', 'workout3.png']; 
 let currentIndexT = 0;
 
 function updateImageT() {

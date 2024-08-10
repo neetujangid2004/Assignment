@@ -5,17 +5,6 @@
     font-family: Arial, sans-serif;
 }
 
-.special-word {
-    padding: 3px;
-    color: rgb(233, 18, 18);
-    background-color: #eeeeee;
-    border-radius: 6px;
-}
-
-b {
-    color: #474646;
-}
-
 /* General Styles */
 body {
     background-color: #fff;
@@ -478,6 +467,16 @@ h3 {
 .content-box.third {
     padding-top: 40px;
 }
+.content-box.third .special-word {
+    padding: 3px;
+    color: rgb(233, 18, 18);
+    background-color: #eeeeee;
+    border-radius: 6px;
+}
+.content-box.third b {
+    color: #474646;
+}
+
 /* JavaScript Code styling */
 .js-Code {
     position: relative;
@@ -539,12 +538,41 @@ h3 {
     margin-right: 5px;
 }
 
+.content-box.third p {
+    line-height: 25px;
+    color: #333;
+}
+
+.content-box.third ol {
+    padding-left: 21px;
+    margin: 10px 0 15px 0;
+    font-size: 16px;
+}
+
+.content-box.third ol li {
+    margin-bottom: 13px; 
+    color: #333;
+}
+.content-box.third .link {
+    padding: 40px 0;
+}
+.content-box.third .link a {
+    color: #747c85;
+}
+
+/* Fourth content-box */
+.content-box.forth {
+    width: 100%;
+    height: 200px;
+    background-color: #fff;
+}
+
 /* Topics box */
 .topics-box {
     height: 400px;
     margin-top: 20px;
     flex: 1;
-    background-color: lightcoral; 
+    background-color: #fff;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -552,34 +580,59 @@ h3 {
 
 .line-container {
     position: fixed;
-    top: 400px;
+    top: 350px;
     display: flex;
     flex-direction: column; /* Align dots vertically */
     gap: 10px; /* Space between dots */
     padding-left: 280px;
+    cursor: pointer;
+    align-items: flex-end;
 }
 
-.line {
+.line.head {
     width: 20px;
     height: 2px;
     background-color: #333;
     border-radius: 25%;
     display: inline-block;
-    cursor: pointer;
+}
+
+.line {
+    width: 15px;
+    height: 2px;
+    background-color: #333;
+    border-radius: 25%;
+    display: inline-block;
 }
 
 .topics {
+    width: 200px;
+    height: 200px;
     display: none;
     position: fixed;
     top: 50%; 
-    left: 85%; 
+    left: 90%; 
     transform: translate(-50%, -50%);
     background-color: #555;
     color: white;
     padding: 10px;
-    border-radius: 4px;
+    border-radius: 10px;
     white-space: nowrap;
     z-index: 1;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+
+.topics ul {
+    list-style-type: none;
+    padding-left: 21px;
+    margin: 0 0 15px 0;
+    font-size: 16px;
+}
+
+.topics ul li {
+    margin-bottom: 13px; 
+    color: #333;
 }
 
 .line-container:hover + .topics {
