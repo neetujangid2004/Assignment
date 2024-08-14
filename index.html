@@ -69,25 +69,13 @@
                             <li>Workout Type</li>
                             <li>Workout minutes</li>
                         </ul>
-                        <div class="image-container">
-                            <img src="workout1.png" alt="Example Image" class="styled-image" id="mainImage">
+                        <div class="image-container firstWorkout">
+                            <img src="workout1.png" alt="Example Image" class="styled-image" id="mainImage" onclick="openModal(0)">
                             <div class="overlay">
                                 <a href="workout1.png" target="_blank" class="overlay-link">View original</a>
                             </div>
-                            
-                            <!-- Modal Structure -->
-                            <div id="imageModal" class="modal">
-                                <img src="workout1.png" alt="Expanded Image" class="modal-content" id="modalImage">
-                                <div class="all-options">
-                                    <button class="prev" id="prevImage">&lt;</button>
-                                    <button class="next" id="nextImage">&gt;</button>
-                                    <button class="zoom-in" id="zoomIn">+</button>
-                                    <button class="zoom-out" id="zoomOut">-</button>
-                                    <a id="downloadImage" download class="download-btn">Download</a>
-                                    <span class="close" id="closeModal">&times;</span>
-                                </div>
-                            </div>
                         </div>
+                
                         <h3 id="Display">Display the user workout list with the below functionalities</h3>
                         <ul class="list-style">
                             <li>Search by name</li>
@@ -95,49 +83,39 @@
                             <li>Pagination</li>
                         </ul>
                         <div class="image-container secondWorkout">
-                            <img src="workout2.png" alt="Example Image" class="styled-image" id="mainImageS">
+                            <img src="workout2.png" alt="Example Image" class="styled-image" id="mainImageS" onclick="openModal(1)">
                             <div class="overlay">
                                 <a href="workout2.png" target="_blank" class="overlay-link">View original</a>
                             </div>
-                            
-                            <!-- Modal Structure -->
-                            <div id="imageModal" class="modal">
-                                <img src="workout2.png" alt="Expanded Image" class="modal-content" id="modalImageS">
-                                <div class="all-options">
-                                    <button class="prev" id="prevImageS">&lt;</button>
-                                    <button class="next" id="nextImageS">&gt;</button>
-                                    <button class="zoom-in" id="zoomInS">+</button>
-                                    <button class="zoom-out" id="zoomOutS">-</button>
-                                    <a id="downloadImageS" download class="download-btn">Download</a>
-                                    <span class="close" id="closeModalS">&times;</span>
-                                </div>
-                            </div>
                         </div>
+                
                         <h3 id="Optional-feature">Optional feature -> Display the workout progress using charts</h3>
                         <div class="image-container secondWorkout">
-                            <img src="workout3.png" alt="Example Image" class="styled-image" id="mainImageT">
+                            <img src="workout3.png" alt="Example Image" class="styled-image" id="mainImageT" onclick="openModal(2)">
                             <div class="overlay">
                                 <a href="workout3.png" target="_blank" class="overlay-link">View original</a>
                             </div>
-                            
-                            <!-- Modal Structure -->
-                            <div id="imageModal" class="modal">
-                                <img src="workout3.png" alt="Expanded Image" class="modal-content" id="modalImageT">
-                                <div class="all-options">
-                                    <button class="prev" id="prevImageT">&lt;</button>
-                                    <button class="next" id="nextImageT">&gt;</button>
-                                    <button class="zoom-in" id="zoomInT">+</button>
-                                    <button class="zoom-out" id="zoomOutT">-</button>
-                                    <a id="downloadImageT" download class="download-btn">Download</a>
-                                    <span class="close" id="closeModalT">&times;</span>
-                                </div>
-                            </div>
                         </div>
+                        
                         <div class="N-content">
                             <span class="bulb-icon">💡</span>
                             <span class="N-text">The screenshots are for representation purposes, feel free to beautify them as needed!</span>
                         </div>
                     </div>
+                
+                    <!-- Modal Structure -->
+                    <div id="imageModal" class="modal">
+                        <img src="" alt="Expanded Image" class="modal-content" id="modalImage">
+                        <div class="all-options">
+                            <button class="prev" id="prevImage">&lt;</button>
+                            <button class="next" id="nextImage">&gt;</button>
+                            <button class="zoom-in" id="zoomIn">+</button>
+                            <button class="zoom-out" id="zoomOut">-</button>
+                            <a id="downloadImage" download class="download-btn">Download</a>
+                            <span class="close" id="closeModal">&times;</span>
+                        </div>
+                    </div>
+                    
                     <div class="content-box third">
                         <h2 id="References">References & Requirements</h2>
                         <ul class="list-style">
