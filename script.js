@@ -60,3 +60,14 @@ function resetZoom() {
     zoomLevel = 1;
     modalImg.style.transform = `scale(${zoomLevel})`;
 }
+
+// display topics box 
+document.querySelector('.line-container').addEventListener('click', function() {
+    const topics = document.querySelector('.topics');
+    if (topics.style.display === 'block') {
+        topics.style.display = 'none';
+        topics.style.maxHeight = '0';
+    } else {
+        topics.style.display = 'block';
+    }
+});

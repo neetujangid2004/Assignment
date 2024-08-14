@@ -569,21 +569,23 @@ h3 {
 
 /* Topics box */
 .topics-box {
-    height: 400px;
-    margin-top: 20px;
-    flex: 1;
     background-color: #fff;
     display: flex;
-    justify-content: center;
-    align-items: center;
+    align-items: center; 
+    justify-content: flex-end;
+    gap: 20px;
+    padding: 20px;
+    height: auto;
+    margin-top: 20px;
+    flex: 1;
 }
 
 .line-container {
     position: fixed;
-    top: 350px;
+    top: 300px;
     display: flex;
-    flex-direction: column; /* Align dots vertically */
-    gap: 10px; /* Space between dots */
+    gap: 15px;
+    flex-direction: column;
     padding-left: 280px;
     cursor: pointer;
     align-items: flex-end;
@@ -591,50 +593,75 @@ h3 {
 
 .line.head {
     width: 20px;
-    height: 2px;
-    background-color: #333;
+    height: 3px;
+    background-color: #504f4f;
     border-radius: 25%;
     display: inline-block;
 }
 
 .line {
     width: 15px;
-    height: 2px;
-    background-color: #333;
+    height: 3px;
+    background-color: #c7c5c5;
     border-radius: 25%;
     display: inline-block;
 }
 
 .topics {
-    width: 200px;
-    height: 200px;
-    display: none;
     position: fixed;
-    top: 50%; 
-    left: 90%; 
-    transform: translate(-50%, -50%);
-    background-color: #555;
-    color: white;
-    padding: 10px;
-    border-radius: 10px;
-    white-space: nowrap;
-    z-index: 1;
-    overflow-y: scroll;
-    overflow-x: hidden;
-}
-
-.topics ul {
-    list-style-type: none;
-    padding-left: 21px;
-    margin: 0 0 15px 0;
-    font-size: 16px;
-}
-
-.topics ul li {
-    margin-bottom: 13px; 
-    color: #333;
+    width: 250px;
+    height: 350px;
+    background-color: white;
+    border: 1px;
+    top: 250px;
+    right: 60px;
+    box-shadow: 10px 15px 20px rgba(0, 0, 0, 0.5);
+    display: none; 
+    line-height: 20px;
+    transition: max-height 0.5s ease; 
+    border-radius: 10%;
 }
 
 .line-container:hover + .topics {
     display: block;
+}
+
+.topics ul {
+    list-style-type: none;
+    padding-left: 0;
+    margin: 15px;
+}
+
+.topics ul li {
+    margin-bottom: 10px;
+}
+
+.topics ul li a {
+    text-decoration: none;
+    color: rgb(68, 68, 252);
+    font-weight: bold;
+    transition: color 0.3s;
+    font-size: 15px;
+}
+
+.topics ul li a:hover {
+    background-color: #eeeeee;
+}
+
+.topics ul li ul {
+    margin-top: 5px;
+    padding-left: 20px;
+}
+
+.topics ul li ul li {
+    margin-bottom: 5px;
+}
+
+.topics ul li ul li a {
+    font-weight: normal;
+    color: #555;
+}
+
+.topics ul li ul li:hover {
+    background-color: #eeeeee;
 }
